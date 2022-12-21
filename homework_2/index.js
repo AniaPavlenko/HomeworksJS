@@ -47,3 +47,21 @@ function getNameOfDay(){
 }
 
 console.log(getNameOfDay());
+
+
+//4 
+const sumSmallestNum = function(arrayOfNum){
+  let minA = arrayOfNum[0];
+  let minB = arrayOfNum[0];
+
+  for(let i = 0; i < arrayOfNum.length; i++){
+    if (arrayOfNum [i] < minA && arrayOfNum [i] !== minB) minA = arrayOfNum[i];
+  }
+  
+  for(let j = 0; j < arrayOfNum.length; j++)
+  if (arrayOfNum [j] < minB && arrayOfNum [j] !== minA) minB = arrayOfNum[j];
+  console.log(minA + minB);
+}
+
+
+sumSmallestNum ([19, 5, 42, 2, 77]);
